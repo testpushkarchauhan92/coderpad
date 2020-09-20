@@ -4,13 +4,15 @@ class Solution {
 
 	public static void main(String[] args) {
 
+		Solution solution = new Solution();
 		int[] arr1 = { 1, 2 };
 		int[] arr2 = { 3, 4 };
-		System.out.println(findDotProduct(arr1, arr2));
+		int dotProduct = solution.findDotProduct(arr1, arr2);
+		System.out.println(dotProduct);
 
 	}
 
-	public static int findDotProduct(int[] arr1, int[] arr2) {
+	public int findDotProduct(int[] arr1, int[] arr2) {
 
 		int dotProduct = 0;
 		for (int i = 0; i < arr1.length - 1; i++) {

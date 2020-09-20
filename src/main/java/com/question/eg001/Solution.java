@@ -10,16 +10,17 @@ class Solution {
 	static List<String> list = new LinkedList<>();
 
 	public static void main(String[] args) {
+		Solution solution = new Solution();
 		String str = "abdd";
 		int limit = 2;
 		String ans = "";
-		findAllSubsequencesForLimit(str, ans, limit);
+		solution.findAllSubsequencesForLimit(str, ans, limit);
 		Set<String> set = new LinkedHashSet<>(list);
 		set.stream().filter(item -> item.length() == 2 && item.charAt(0) != item.charAt(1))
 				.forEach(result -> System.out.print(result + " "));
 	}
 
-	public static void findAllSubsequencesForLimit(String s, String ans, int limit) {
+	public void findAllSubsequencesForLimit(String s, String ans, int limit) {
 
 		if (s == null) {
 			return;

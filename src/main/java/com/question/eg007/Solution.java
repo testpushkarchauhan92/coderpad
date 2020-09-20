@@ -4,12 +4,13 @@ class Solution {
 
 	public static void main(String[] args) {
 
+		Solution solution = new Solution();
 		int[] nums = { 12, 13, 1, 10, 34, 1 };
-		findSecondSmallestNumber(nums);
+		solution.findSecondSmallestNumber(nums);
 
 	}
-	
-	public static void findSecondSmallestNumber(int[] arr) {
+
+	public void findSecondSmallestNumber(int[] arr) {
 		int firstSmallestNum = Integer.MAX_VALUE;
 		int secondSmallestNum = Integer.MAX_VALUE;
 

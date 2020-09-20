@@ -3,11 +3,12 @@ package com.question.eg003;
 class Solution {
 
 	public static void main(String[] args) {
+		Solution solution = new Solution();
 		String str = "aabcddaaadb";
-		findLongest(str);
+		solution.findLongestConsecutiveSameCharacterString(str);
 	}
 
-	public static void findLongest(String s) {
+	public void findLongestConsecutiveSameCharacterString(String s) {
 		int max_count = 0;
 		int count = 0;
 		Character max_char = null;
@@ -36,7 +37,7 @@ class Solution {
 
 		int startIndex = s.indexOf(key);
 		int endIndex = startIndex + max_count - 1;
-		int max_length = endIndex - startIndex;
+		int max_length = endIndex - startIndex + 1;
 
 		System.out.println("Character=" + max_char + ", start index=" + startIndex + ", end index=" + endIndex
 				+ ", length=" + max_length);
