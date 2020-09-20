@@ -1,0 +1,214 @@
+1.  Find unique substring in a string for a given limit
+Example: abdd
+Output: ab ad bd
+Complexity: Simple
+
+2.  Given an input string, write a function that returns the Run Length encoded string. For example, if the input string is “wwwwaaadexxxxxx”, then the function should return “w4a3d1e1x6”.
+Example: Input "aaabbcaaaadddeee"
+Output: "a3b2c1a4d3e3"
+Complexity: Simple
+
+3.  Write the letter that occurs maximum number of times as a group, and the start index and length of the group.
+In the above example, output should be Character=a, start index=6, length=3
+
+4.  Given an integer, return all sequences of numbers that sum to it. Return  -1 if such subarray doesn’t exist.
+Example: 3
+Output: (1, 2), (2, 1), (1, 1, 1)
+Complexity: Medium
+
+
+5.  Given a group of words we need to write a code which will group the words which are anagrams of each other. 
+For e.g. [art,cheese,cat,rat,tar,act,tca]
+Output: [[art,rat,tar],[cat,act,tca],[cheese]] 
+Complexity: Medium
+
+
+6.  Dot Product of two array/matrix. Both array should be same in size
+e.g:
+arr1 = {1,2}
+arr2 = {3,4}
+
+Output = 1*3 + 2*4 = 11
+Complexity: Simple
+
+
+7.  Find the second smallest on array
+Example: {12, 13, 1, 10, 34, 1}
+Output: 10
+Complexity: Simple
+
+
+8.  Given a number as input we need to print the number in its prime factorization form.
+For e.g. Input: 24
+Output: 2,2,2,3
+Complexity: Medium
+
+9.  Arrange given numbers to form the biggest number 
+Example: {1, 34, 3, 98, 9, 76, 45, 4}
+Output: 998764543431
+  Complexity: Medium
+
+
+10.  Merge Two Sorted Arrays
+Example: { 5, 8, 9} {4, 7, 8}
+Output: {4, 5, 7, 8, 8, 9}
+Complexity: Simple
+
+11.  Reverse words in a given string
+Example: "getting good at coding needs a lot of practice"
+Output: "practice of lot a needs coding at good getting"
+Complexity: Simple
+
+
+12.  Second most repeated string in a sequence
+Example: {"aaa", "bbb", "ccc", "bbb", "aaa", "aaa"}
+Output: “bbb”
+Complexity: Medium
+
+
+13.  Find Missing And Repeating
+Example: {4, 3, 6, 2, 1, 1}
+Output: 1, 5  // 5 is missing and 1 occurs twice
+Complexity: Simple
+
+
+14.  Given an array of integers, find the length of the shortest subarray that is sum to a given numbers. Return  -1 if such subarray doesn’t exist
+Complexity: Medium
+
+15.  Insert element in a sorted array
+Example: { 12, 16, 20, 40, 50, 70 } Insert 58
+Output: { 12, 16, 20, 40, 50, 58, 70 }
+Complexity: Medium
+
+
+16.  Group of N students sitting in a circular loop. Counting numbers from 1 to K and the kth student gets eliminated. Process is repeated till only one student remains. We need to write a code which will accept two inputs namely N and K and need to determine which student will be the last man standing.
+For e.g. N=6, K=2,
+Output = 5
+Complexity: Complex
+
+17.  Find the optimal distance between a and b. Note: You can traverse only North and East.
+arr = [[0,0,0,0,5],
+[0,1,1,1,1],
+[2,0,0,0,0]]
+a is at a[2][0]
+b is at a[0][4]
+
+18.  Write a program to search the First and Last Position of the occurrence of an element in a Linked List. The program should take integer N as an input followed by i integers (i1 - iN) in the next row separated by “space”. Third row of input should be only one integer P among the N integers given in the second row.
+Output of the program will be in two rows, “First Position” & “Last Position” of the P element.
+Sample Input
+3
+8 2 9
+2
+Sample Output
+1
+1
+Sample Input
+6
+9 4 9 7 9 2
+9
+Sample Output
+0
+4
+
+Complexity: Complex
+
+
+19.  Given a linked list, check if the linked list has loop or not. Below diagram shows a linked list with a loop.
+1---->2---->3
+^         |
+|         V
+5<--4    
+
+Complexity: Complex
+
+
+20.  Given a 2 dimensional array that holds student name and score, calculate the maximum average score.  A student can have multiple entry with different score.
+
+Example:
+Input:
+[
+  {
+      "Bob",80
+       "Charles",85
+       "Rob",70  
+       "Bob",100  
+       "Charles",75
+  }
+]
+
+Output would be 90 which is the highest average score of Bob 
+Complexity: Complex
+
+21.  There is a list or array of Strings containing IP addresses. We need to find the IPs with maximum occurrences
+Complexity: Medium
+
+22.  Create longest string which is available in the given dictionary 
+dic = ['to','toes','toe','dog','dogs','book','banana']
+
+Example: 
+Input: osetdg
+Output: dogs, toes
+Complexity: Medium
+
+23.  Find the minimum element in a sorted and rotated array
+https://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/
+
+24.  https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/
+
+25.  https://www.geeksforgeeks.org/check-loop-array-according-given-constraints
+   * You are given an integer array of size N. 
+   * Every element of the array is greater than or equal to 0.
+   * Starting from arr[startIndex], follow each element to the index it points to. 
+   * Continue to do this until you find a cycle. 
+   * Return the length of the cycle. If no cycle is found return -1
+   *
+   * Examples:
+   * countLengthOfCycle([1, 0 ], 0) == 2
+   * countLengthOfCycle([1, 2, 0], 0) == 3
+   */
+
+/*
+Question from Blackrock:
+26. Write a program that prints the numbers from 1 to 100, except 
+    - For numbers that are multiples of five print 'Foo' 
+    - For numbers that are multiples of seven print 'Bar' 
+    - For numbers that are multiples of both five and seven print 'FooBar'
+
+  2. Recursively remove all adjacent duplicates in a given string.
+  For e.g.  Input: Mississippi
+   Output: m
+
+  3. Given an unsorted array of nonnegative integers, find a continuous subarray which adds to a given number
+  For e.g.   Input: arr[] = {1, 4, 0, 0, 3, 10, 5}, sum = 7
+  Output: Sum found between indexes 1 and 4
+  Note : Sum of elements between indices 1 and 4 is 4 + 0 + 0 + 3 = 7
+
+  4. Reverse a linked list using an iterative program 
+  For e.g. Input: 1->2->3->4->NULL
+   Output: 4->3->2->1->NULL
+
+  5. Write a program to print all permutations of a given string?
+  For e.g. Input : 'abc'
+   Output: 'abc', 'acb', 'bac', 'bca', 'cab', 'cba'
+
+*/
+
+
+
+/*
+import java.io.*;
+import java.util.*;
+
+class Solution {
+  public static void main(String[] args) {
+    ArrayList<String> strings = new ArrayList<String>();
+    strings.add("Hello, World!");
+    strings.add("Welcome to CoderPad.");
+    strings.add("This pad is running Java " + Runtime.version().feature());
+
+    for (String string : strings) {
+      System.out.println(string);
+    }
+  }
+}
+*/
